@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>918 Spyder </title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>918 SPYDER</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/s1.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/s2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/s3.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/s4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE 918 SPYDER</h3>
+    <p class="description">The Porsche 918 Spyder is an iconic high-performance plug-in hybrid supercar that combines cutting-edge technology with breathtaking design and performance. Here’s a detailed description of its specifications:
+
+Engine Specifications
+Type: 4.6-liter naturally aspirated V8 engine.
+
+Electric Motors: Two electric motors, one on each axle (front and rear).
+
+Combined Output:
+
+887 horsepower (661 kW) (608 hp from the V8 and 279 hp from the electric motors).
+
+Torque: 944 lb-ft (1,280 Nm) in hybrid mode.
+
+Transmission: 7-speed Porsche Doppelkupplung (PDK) dual-clutch automatic transmission.
+
+Drivetrain: All-wheel drive.
+
+Performance
+0-100 km/h (0-62 mph): 2.6 seconds.
+
+Top Speed:
+
+343 km/h (213 mph).
+
+Electric-only mode: 150 km/h (93 mph).
+
+Electric Range: Approximately 19 miles (31 km) under ideal conditions.
+
+Design and Features
+Body: Lightweight carbon fiber reinforced polymer (CFRP) monocoque and panels for a rigid yet ultra-lightweight structure.
+
+Aerodynamics: Active aerodynamic features including adjustable rear wing and flaps for optimized downforce and efficiency.
+
+Interior: Luxurious and driver-focused with a high-resolution touchscreen interface, premium materials, and adjustable bucket seats.
+
+Driving Modes: Five selectable modes (E-Power, Hybrid, Sport Hybrid, Race Hybrid, Hot Lap) for varying levels of performance and efficiency.</main>
+<h3>ABOUT ENGINE PORSCHE 918 SPYDER</h3>
+<P class="description">The Porsche 918 Spyder is an iconic high-performance plug-in hybrid supercar that combines cutting-edge technology with breathtaking design and performance. Here’s a detailed description of its specifications:
+
+Engine Specifications
+Type: 4.6-liter naturally aspirated V8 engine.
+
+Electric Motors: Two electric motors, one on each axle (front and rear).
+
+Combined Output:
+
+887 horsepower (661 kW) (608 hp from the V8 and 279 hp from the electric motors).
+
+Torque: 944 lb-ft (1,280 Nm) in hybrid mode.
+
+Transmission: 7-speed Porsche Doppelkupplung (PDK) dual-clutch automatic transmission.
+
+Drivetrain: All-wheel drive.
+</P>
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+        
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>

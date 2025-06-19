@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PANAMERA </title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>PANAMERA </h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/panamera.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/panamera2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/panamera3.jpeg.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/panamera4.jpeg.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE PANAMERA</h3>
+    <p class="description">Panamera 4
+•	Adaptive air suspension including PASM.
+The Panamera models are aquipped with adaptive air suspension including Porsche Active Suspension Management (PASM). The high-end porsche active ride chassis in optionally available for the Panamera E-Hybird models.
+•	Porshe driver experience
+The driver-oriented display and operating concept - supple-mented by innovative Online Services from Porsche Connect, such as the My Porsche App in Apple CarPlay® - offers maxi-mum operating convenience.
+•	Comfort in the rear seats.
+The rear seats with plenty of legroom and headroom offer a high level of comfort and lateral support. Available on request: seat ventilation and massage function.
+•	App Center
+The App Center offers an interactive experience with the ability to download your favorite apps from categories such as music and video streaming, gaming and news.</p>
+ 
+<h3>ABOUT ENGINE PORSCHE PANAMERA</h3>
+<p class="description">
+Base Model:* 2.9-liter twin-turbocharged V6.
+
+   Power: 325 hp.
+   Torque: 450 Nm (332 lb-ft).</p>
+
+<p class="description">4S:* 2.9-liter twin-turbocharged V6.
+
+   Power: 440 hp.
+   Torque: 550 Nm (406 lb-ft).</P>
+
+<p class="description"> Turbo S:* 4.0-liter twin-turbocharged V8.
+
+   Power: 620 hp.
+   Torque: 820 Nm (605 lb-ft).</p>
+<p class="description"> E-Hybrid Models:* Combines a 2.9L or 4.0L engine with an electric motor for hybrid powertrains.
+
+   Turbo S E-Hybrid:* 4.0L V8 + electric motor = 690 hp.</p>
+
+<h3> Performance:</h3>
+
+<p class="description"> 0-100 km/h (0-62 mph): Varies from 5.6 to 3.2 seconds depending on the model.
+Top Speed: Ranges from 265 to 315 km/h (165-196 mph).</p>
+
+</main>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+
+        
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAFLI PUNYA  - Home</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css">
+</head>
+<body id="home-page">
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="55" alt="Logo" class="logo">
+
+    <title>Websiteku</title>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/Porsche 911 Turbo Coupe 1979 (1).jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/Porsche 911 Turbo Coupe 1979 (2).jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/Porsche 911 Turbo Coupe 1979.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/porsche.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        
+      </div>
+    </div>
+    <div class="hero-text">
+      <h1>WELCOME TO PORSCHE </h1>
+      <p>"Porsche embodies timeless elegance and pure performance where beauty</p>
+      <p></p> meets power in perfect harmony</p>
+      <h5>_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</h5>
+      <p>                                           </p>
+       <p>                                           </p>
+        <p>                                           </p>
+         <p>                                           </p>
+          <p>                                           </p>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const pageId = document.body.id;
+    const navLinks = document.querySelectorAll(".navbar nav a");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (
+        (pageId === "home-page" && href.includes("INTI")) ||
+        (pageId === "cars-page" && href.includes("mobil")) ||
+        (pageId === "about-page" && href.includes("ABOUT")) ||
+        (pageId === "contact-page" && href.includes("KONTAK"))
+      ) {
+        link.classList.add("active-link");
+      }
+    });
+  });
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+
+       
+        document.body.classList.add("fade-out");
+
+       
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+
+  
+</script>
+
+</body>
+</html>

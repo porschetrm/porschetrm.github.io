@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Macan </title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>MACAN</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/2022-porsche-macan-t.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/Porsche-Macan-T-2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/Porsche-Macan-T-4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/2022-porsche-macan-t (1).jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE MACAN</h3>
+    <p class="description">Macan 
+•	Exterior
+The Macan drives on 19-inch Macan wheels. The side blades on the Macan are finished in Lava Black with a 3D texture. The wing at the front end is painted in the exterior color.
+The large brake system with Black brake calipers adds another accentuating detail.
+•	Interior
+Your comfort zone outside of the comfort zone. The cabin of the Macan is designed for maximum forward thrust and integrates the driver perfectly into the vehicle. The sporty front seats convey a feeling characteristic of the Macan: Despite the higher seating position, there is a clear impression of being closely connected to the road. On top of that, everything is always in full view and under control thanks to perfect ergonomics.
+•	Performance
+Want to increase your adrenaline levels? Challenge accepted. It is no coincidence that the Macan symbolizes the endorphin kick of everyday urban life. It is characterized by typical Porsche acceleration with powerful, high-revving engines. Not to mention the excellent power distribution of the all-wheel drive and outstanding handling. For an even more intense driving experience.
+•	Porsche Advanced Cockpit.
+High-tech operating concept: The elevated center console allows quick access from the steering wheel to the gear selector. Its Direct Touch Control features a glass-look interface with touch-sensitive controls for direct access to the most important functions. The high-resolution 10.9-inch touchscreen display is integrated into the dashboard.
+•	Sport Chrono Package.
+What do you not want to lose on your way to your next adventure? Time. That is why the optional Sport Chrono Package, including mode switch, provides even sportier tuning of the chassis, engine and transmission. Four driving modes can be selected using the mode switch on the steering wheel - and the Sport Response button provides maximum performance for 20 seconds.
+•	Luggage compartment.
+The luggage compartment is designed for a wide variety of uses - with a volume of 17.2 ft. Thanks to the folding rear seat, it can be extended to 53.1 ft®. The optional roof rail blends harmoniously into the dynamic vehicle design and is a prerequisite for the optional roof carrier system. You can find a range of add-on modules in the Porsche Tequipment range of accessories.
+The exterior color Papaya Metallic is no longer available to order.
+•	Rear transport
+The optional towbar system is designed for high towing capacities of up to 4 and allows a rear-mounted bike carrier for up to two bikes to be installed.</p>
+
+<h3>ABOUT ENGINE PORSCHE MACAN</h3>
+<P class="description">1. Available Models & Powertrains
+Macan Base:
+
+ Engine: 2.0L Turbocharged 4-cylinder
+ Power: 265 PS (195 kW)
+ Torque: 400 Nm
+ 0-100 km/h: 6.4 seconds
+ Top Speed: 232 km/h</P>
+
+<P class="description"> 2.Macan spesification
+
+ Engine: 2.9L Twin-Turbo V6
+ Power: 380 PS (280 kW)
+ Torque: 520 Nm
+ 0-100 km/h: 4.8 seconds
+ Top Speed: 259 km/h</P>
+
+<P class="description">3. Macan GTS:
+
+ Engine: 2.9L Twin-Turbo V6 (tuned)
+ Power: 440 PS (324 kW)
+ Torque: 550 Nm
+ 0-100 km/h: 4.5 seconds
+ Top Speed: 272 km/h</P>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+        
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      }
+    });
+  });
+  </script>
+</body>
+</html>

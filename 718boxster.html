@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>718 Boxster </title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+       <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>718 BOXSTER</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/b1.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/b2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/b3.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/b4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE 718 BOXSTER</h3>
+    <p class="description">718 booxter
+•	Design.
+Precise, not playful. Confident, not reserved. Deep, wide, flat. The design of the 718 models is characterized by clearly defined shapes and the unmistakable silhouette with a characteristic mid-engine flyline.
+•	Soft top.
+The soft top of the 718 Boxster lies flat in a sports car shape when closed. At the push of a button, it opens and closes entirely automatically in 9 seconds - even when driving at up to 31 mph.
+•	Mid-engine sports car.
+In the 718 models, the mid-engine concept with boxer engine results in a low and central center of gravity. For dynamic cornering and top driving performance.
+•	Chassis
+Characteristic Porsche sporty chassis tuning and direct steering for agile handling for superior cornering perfor-mance. The optional Porsche Active Suspension Management (PASM) lowered by 10 mm offers even greater performance.
+•	Interior concept.
+Intuitive handling, performance-oriented ergonomics and a clean design. The interior of the 718 models is also fully geared towards sporty performance.
+•	Sport Chrono Package.
+The optional Sport Chrono Package with mode switch provides an even sharper setup of the chassis, engine and transmission.</p>
+  </main>
+  <h3> ABOUT ENGINE PORSCHE 718 BOXSTER</h3>
+  <p class="description">
+
+718 Boxster Base: 2.0-liter turbocharged flat-4.
+
+   Power: 300 hp.
+   Torque: 380 Nm (280 lb-ft).</p>
+<p class="description"> 718 Boxster S: 2.5-liter turbocharged flat-4.
+
+   Power: 350 hp.
+   Torque: 420 Nm (310 lb-ft).</p>
+<p class="description"> Boxster GTS 4.0: 4.0-liter naturally aspirated flat-6.
+
+   Power: 394 hp.
+   Torque: 420 Nm (310 lb-ft).</p>
+
+<h3>PERFORMANCE</h3>
+<p class="description"> 0-100 km/h (0-62 mph): 5.1 to 4.5 seconds (base to GTS).
+ Top Speed: 275 km/h (170 mph) for the base model and 293 km/h (182 mph) for the GTS.</p>
+
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+  
+  <script>
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); // Stop default action
+
+        
+        document.body.classList.add("fade-out");
+
+       
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+
+  
+  </script>
+</body>
+</html>

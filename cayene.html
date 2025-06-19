@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CAYENNE</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>CAYENNE</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/cayenne 1.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/cayenne 2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/cayenne 3.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/cayenne 4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE CAYENNE</h3>
+    <p class="description">Cayenne
+•	On and off-road performance
+In addition to comfort and sportiness on the road, the en-hanced chassis systems also increase performance on de-manding terrain.
+•	HD-Matrix Design LED Headlights in Black.
+The high-resolution HD-Matrix Design LED Headlights in Black offer outstanding lighting performance with more than 64,000 pixels and fit seamlessly into the GTS design with their refined look. M1365
+•	App Center.
+The App Center offers an interactive experience with the ability to download your favorite apps from categories such as music and video streaming, gaming and news.
+•	Assistance systems.
+All Cayenne models can be equipped with numerous assistance systems that further increase driving comfort.
+•	E-Hybrid.
+With the current battery generation of the Cayenne E-Hybrid models, the electric range has been increased. In addition, the new electric motor provides superior driving performance in electric mode.</p>
+<h3>ABOUT ENGINE PORSCHE CAYENNE</h3>
+<p class="description">
+1. Cayenne Base:
+
+ Engine: 3.0L Turbo V6
+ Power: 340 PS (250 kW)
+ Torque: 450 Nm
+ 0-100 km/h: 6.0 sec
+ Top Speed: 245 km/h</p>
+
+<p class="description">Cayenne S:
+
+ Engine: 2.9L Twin-Turbo V6
+ Power: 440 PS (324 kW)
+ Torque: 550 Nm
+ 0-100 km/h: 5.0 sec
+ Top Speed: 263 km/h </p>
+
+<p class="description"> Turbo GT:
+ Engine: 4.0L Twin-Turbo V8
+ Power: 640 PS (471 kW)
+ Torque: 850 Nm
+ 0-100 km/h: 3.3 sec
+ Top Speed: 300 km/h</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE </p>
+  </footer>
+
+  <script>
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+
+        
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>

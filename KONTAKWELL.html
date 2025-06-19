@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAPLI PUNYA - Contact</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css">
+</head>
+<body id="contact-page">
+  <header>
+    <div class="navbar">
+     <img src="ASSET/porsche-logo-6.png" width="55" height="55" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: PORSCHE@gmail.com</p>
+    <p>Phone: +62 00000100000</p>
+    <p>Ready to drive your dream Porsche?</p>
+    <h2>Consultation</h2>
+<p>Contact us now for consultation and test drive.</p>
+<p>Location: [German]</p>
+<p>WhatsApp: [00000000000000]</p>
+<h2>The Legend</h2>
+<p> the legend. Live the legacy.</p>
+<p>Experience Porsche like never before.</p>
+<p>Get in touch today: [083246536732434]</p>
+<h2> Luxury </h2>
+<p>Luxury has a name — Porsche.</p>
+<p>Interested in owning one? We’re just a message away.</p>
+<p>WhatsApp: [77645667876]</p>
+<p>Visit our showroom: [German]</p>
+<h2>News</h2>
+<p>Exclusivity begins here.</p>
+<p>Let us help you find your perfect Porsche.</p>
+<p>Message us now for details and appointments.</p>
+<h2>Contact and Showroom</h2>
+<p>More than a car — it’s a lifestyle.</p>
+<p>Discover the Porsche experience with us.</p>
+<p>Contact: [porsche@gmail.com]</p>
+<p>Showroom: [German]</p>
+
+</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const pageId = document.body.id;
+    const navLinks = document.querySelectorAll(".navbar nav a");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (
+        (pageId === "home-page" && href.includes("INTI")) ||
+        (pageId === "cars-page" && href.includes("mobil")) ||
+        (pageId === "about-page" && href.includes("ABOUT")) ||
+        (pageId === "contact-page" && href.includes("KONTAK"))
+      ) {
+        link.classList.add("active-link");
+      }
+    });
+  });
+
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RAFLI PUNYA  - Porsche Cars</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body id="cars-page">
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="55" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="car-gallery">
+    <section class="car-section">
+    <h2>Porsche Collection</h2>
+    <input type="text" id="search" placeholder="Search Porsche Models..."  onkeyup="searchCars()" />
+     </section>
+    <div class="car-grid" id="carGrid">
+      <div class="car-card" data-name="911 Carrera">
+        <a href="911carera.html">
+          <img src="ASSET/c1.jpg" alt="911 Carrera" />
+          <h3>911 Carrera</h3>
+        </a>
+        <p>Iconic and powerful sports car.</p>
+      </div>
+    
+      <div class="car-card" data-name="Taycan">
+        <a href="taycan.html">
+          <img src="ASSET/taycannn.jpg" alt="Taycan" />
+          <h3>Taycan</h3>
+        </a>
+        <p>All-electric performance.</p>
+      </div>
+    
+      <div class="car-card" data-name="Cayenne">
+        <a href="cayene.html">
+          <img src="ASSET/cayenne 2.jpg" alt="Cayenne" />
+          <h3>Cayenne</h3>
+        </a>
+        <p>SUV with luxury and power.</p>
+      </div>
+    
+      <div class="car-card" data-name="Macan">
+        <a href="macan.html">
+          <img src="ASSET/2022-porsche-macan-t.jpg" alt="Macan" />
+          <h3>Macan</h3>
+        </a>
+        <p>Compact SUV with attitude.</p>
+      </div>
+    
+      <div class="car-card" data-name="718 Boxster">
+        <a href="718boxster.html">
+          <img src="ASSET/b1.jpg" alt="718 Boxster" />
+          <h3>718 Boxster</h3>
+        </a>
+        <p>Mid-engine roadster joy.</p>
+      </div>
+    
+      <div class="car-card" data-name="718 Cayman">
+        <a href="718cayman.html">
+          <img src="ASSET/y4.jpg" alt="718 Cayman" />
+          <h3>718 Cayman</h3>
+        </a>
+        <p>Sharp, balanced coupe.</p>
+      </div>
+    
+      <div class="car-card" data-name="Panamera">
+        <a href="panema.html">
+          <img src="ASSET/panamera.jpg" alt="Panamera" />
+          <h3>Panamera</h3>
+        </a>
+        <p>Luxury meets performance.</p>
+      </div>
+    
+      <div class="car-card" data-name="911 Turbo S">
+        <a href="911turbo.html">
+          <img src="ASSET/Porsche 911 Turbo Coupe 1979 (2).jpg" alt="911 Turbo S" />
+          <h3>911 Turbo S</h3>
+        </a>
+        <p>Speed redefined.</p>
+      </div>
+    
+      <div class="car-card" data-name="Carrera GT">
+        <a href="carreragt.html">
+          <img src="ASSET/h3.jpg" alt="Carrera GT" />
+          <h3>Carrera GT</h3>
+        </a>
+        <p>Legendary V10 supercar.</p>
+      </div>
+    
+      <div class="car-card" data-name="918 Spyder">
+        <a href="918spyder.html">
+          <img src="ASSET/s1.jpg" alt="918 Spyder" />
+          <h3>918 Spyder</h3>
+        </a>
+        <p>Hybrid hypercar innovation.</p>
+      </div>
+    </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+    function searchCars() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const cars = document.querySelectorAll('.car-card');
+      cars.forEach(car => {
+        const name = car.getAttribute('data-name').toLowerCase();
+        car.style.display = name.includes(input) ? 'block' : 'none';
+      });
+    }
+
+    function searchCars() {
+    const input = document.getElementById('search').value.toLowerCase();
+    const cars = document.querySelectorAll('.car-card');
+    cars.forEach(car => {
+      const name = car.getAttribute('data-name').toLowerCase();
+      car.style.display = name.includes(input) ? 'block' : 'none';
+    });
+  }
+
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const pageId = document.body.id;
+    const navLinks = document.querySelectorAll(".navbar nav a");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (
+        (pageId === "home-page" && href.includes("INTI")) ||
+        (pageId === "cars-page" && href.includes("mobil")) ||
+        (pageId === "about-page" && href.includes("ABOUT")) ||
+        (pageId === "contact-page" && href.includes("KONTAK"))
+      ) {
+        link.classList.add("active-link");
+      }
+    });
+  });
+
+
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+        
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+</script>
+
+  
+</body>
+</html>

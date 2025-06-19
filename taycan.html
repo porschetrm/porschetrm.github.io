@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taycan </title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>TAYCAN</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/i1.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/i2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/i3.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/i4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE TAYCAN</h3>
+    <p class="description">Taycan
+•	Driving dynamics
+from the racetrack to the road: track mode and push-to-pass. Theb optional Porsche Active ride takes driving dynamics and agility to a new level on all- wheel drive models.
+•	Headlights
+Recognizable from afar, day or night: the characteristic Porsche 4-point design on the matrix design LED headlights and the hd matrix design LED headlights that come as standart on Turbo models.
+•	Design
+With pure propotion, the all-electric taycan clearly emphasizes its even greater sportiness.
+•	E-perfomance
+The battery’s optimazed cell chemistry achieves goals that have made the difference is motorsports: improved range and short downtimes.
+•	Porsche driver experience
+The driver-oriented operating and display consept-supple-mented by innovative online services from Porsche connect such as the my Porsche app in apple carplay-offers maximum operating convenience.
+•	App center
+The app center offers an interactive experience with the ability to download your favorite apps from categories such as music and video streaming , gaming or news</p>
+ <h3>ABOUT ENGINE PORSCHE TAYCAN</h3>
+ <p class="description">1. Taycan (Base):
+
+ Battery: 79.2 kWh (Performance Battery) / 93.4 kWh (Performance Battery Plus)
+ Power: 402-476 PS (300-350 kW)
+ Torque: 345-500 Nm
+ 0-100 km/h: 5.4-4.8 sec
+ Range (WLTP): 392-507 km</p>
+
+<p class="description">2. Taycan 4S:
+
+ Battery: 93.4 kWh
+ Power: 517 PS (380 kW)
+ Torque: 650 Nm
+ 0-100 km/h: 4.0 sec
+ Range (WLTP): 452 km</p>
+
+<p class="description">3. Taycan Turbo S:
+
+ Battery: 93.4 kWh
+ Power: 761 PS (560 kW) with Launch Control
+ Torque: 1,050 Nm
+ 0-100 km/h: 2.8 sec
+ Range (WLTP): 440 km</p>
+</p>
+</main>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+
+        
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      }
+    });
+  });
+  </script>
+</body>
+</html>

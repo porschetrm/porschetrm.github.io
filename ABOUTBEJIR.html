@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAPLI PUNYA- About</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css">
+</head>
+<body id="about-page">
+  <header>
+    <div class="navbar">
+       <img src="ASSET/porsche-logo-6.png" width="55" height="55" alt="Logo" class="logo">
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="about-section">
+    <h2>The History of Porsche</h2>
+    <p>
+Porsche is a legendary name in the automotive world, widely known for its commitment to performance, precision engineering, and timeless design. The company was founded in 1931 by Ferdinand Porsche, an Austrian automotive engineer, in Stuttgart, Germany. Originally named Dr. Ing. h.c. F. Porsche GmbH, the company began as a consulting firm that provided engineering services rather than producing cars of its own.
+
+Early Years and the Volkswagen Beetle
+In the early 1930s, one of Ferdinand Porsche’s most significant contributions was the design of the Volkswagen Beetle, a project commissioned by the German government under Adolf Hitler’s direction to create a “people’s car” (Volkswagen in German). The Beetle became one of the most iconic and best-selling cars of all time, and it laid the foundation for Porsche’s future in automotive design.
+
+Birth of the First Porsche – The 356
+After World War II, Porsche began to develop cars under its own name. In 1948, Ferdinand’s son, Ferry Porsche, took the lead in creating the first true Porsche car: the Porsche 356. The 356 was a lightweight, nimble sports car with a rear-engine layout and aerodynamic styling. It gained immediate popularity among car enthusiasts for its performance and handling.
+
+The Rise of the 911 – A Legend is Born
+In 1964, Porsche introduced what would become its most iconic model: the Porsche 911. Designed by Ferdinand "Butzi" Porsche, Ferry’s son, the 911 featured a distinctive silhouette, a flat-six rear engine, and excellent driving dynamics. It quickly became the symbol of Porsche’s engineering excellence and continues to be produced and evolved to this day.
+
+Over the decades, the 911 has gone through many generations, each improving in performance, technology, and safety, but always maintaining the essence of the original design. The 911 is not just a car — it is a cultural icon and a benchmark in the world of sports cars.</p>
+
+<h3>in Motorsports</h3>
+<P class="description"> has a long and storied history in motorsport, which has been a vital part of the brand’s identity. The company has competed in countless racing events and has an impressive record in prestigious races such as the 24 Hours of Le Mans, Formula One, World Endurance Championship, and Rally. Porsche holds the record for the most overall victories at Le Mans, showcasing its engineering and endurance capabilities.</P>
+
+<h3>Some of its legendary race cars include:
+</h3>
+
+<P class="description">Porsche 917 – dominant in endurance racing during the 1970s
+
+Porsche 956 and 962 – successful in the Group C racing era
+
+Porsche 919 Hybrid – a modern Le Mans champion and a technology leader</P>
+
+<h3>Diversification</h3>
+<P class="description"> Porsche was originally focused on sports cars, the company has expanded its lineup over the years to meet global demand and ensure profitability. In 2002, Porsche entered the luxury SUV market with the Porsche Cayenne, which was initially controversial among purists but became a commercial success. It was followed by the Macan SUV and Panamera sedan, helping Porsche reach a broader customer base.</P>
+
+<h3> Electrification</h3> 
+<P class="description"> recent years, Porsche has committed to sustainability and innovation by investing in electric vehicles. In 2019, the company launched the Porsche Taycan, its first fully electric sports car. The Taycan combines Porsche’s trademark performance with cutting-edge electric technology and has been well received worldwide.
+
+Porsche plans to electrify more of its lineup in the coming years, including hybrid and electric versions of the Macan and 718 models, all while preserving the brand’s performance DNA.
+
+Legacy and the Future
+Today, Porsche AG is part of the Volkswagen Group, one of the largest automobile groups in the world. Despite being under a larger corporate umbrella, Porsche has retained a high level of independence in design, engineering, and brand identity.
+
+Porsche continues to be a leader in automotive innovation, blending heritage with modern technology. Whether through traditional internal combustion engines, hybrid performance systems, or full-electric powertrains, Porsche remains dedicated to delivering the “Porsche experience” — driving pleasure, quality, and prestige.
+
+From the humble beginnings of a small engineering firm to becoming a global icon, Porsche’s story is one of innovation, perseverance, and passion for excellence.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pageId = document.body.id;
+    const navLinks = document.querySelectorAll(".navbar nav a");
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute("href");
+      if (
+        (pageId === "home-page" && href.includes("INTI")) ||
+        (pageId === "cars-page" && href.includes("mobil")) ||
+        (pageId === "about-page" && href.includes("ABOUT")) ||
+        (pageId === "contact-page" && href.includes("KONTAK"))
+      ) {
+        link.classList.add("active-link");
+      }
+    });
+  });
+
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+ 
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

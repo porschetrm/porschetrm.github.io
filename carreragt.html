@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CARRERA GT</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>CARRERA GT </h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/h1.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/h2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/h3.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/h4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE CARRERA GT</h3>
+    <p class="description">Porsche Carrera GT
+Ten years after production of the Carrera GT ended, it became a member of the Classic family. Built from 2003, the 980's appearance and stature left no question that it had motorsport in its DNA.
+
+While its design displayed its stylistic relationship to the production vehicles, it combined this with the hallmarks of legendary Porsche racing vehicles.
+
+
+Built as an exclusive run of only 1,270 vehicles, the Carrera GT was powered by a ten-cylinder engine with dry sump.
+
+The naturally aspirated 5.5-litre V10 engine, which was actually designed for racing, had its displacement increased to 5.7 litres for the series.
+
+Producing 450 kW (612 PS) of power at 8,000 rpm and with a top speed of over 330 km/h (205 mph), the Carrera GT truly set the benchmark.
+
+The driving force was delivered via a manual six-speed transmission.</p>
+<h3>ABOUT ENGINE PORSCHE CARRERA GT</h3>
+<p class="description">
+1. Engine & Performance
+ Engine Type: 5.7L Naturally Aspirated V10 (F1-inspired)
+ Max Power: 612 PS (450 kW) @ 8,000 rpm
+ Max Torque: 590 Nm (435 lb-ft) @ 5,750 rpm
+ Transmission: 6-speed manual (no automatic option)
+ 0–100 km/h (0–62 mph): 3.9 seconds
+ 0–200 km/h (0–124 mph): 9.9 seconds
+ Top Speed: 330 km/h (205 mph)
+- Drivetrain: Rear-Wheel Drive (RWD)</p>
+
+<p class="description">2. Dimensions & Weight
+ Length: 4,613 mm (181.6 in)
+ Width: 1,921 mm (75.6 in)
+ Height: 1,166 mm (45.9 in)
+ Wheelbase: 2,730 mm (107.5 in)
+ Curb Weight: 1,380 kg (3,042 lbs) (carbon-fiber monocoque)</p>
+
+<p class="description">3. Chassis & Materials
+ Chassis: Carbon-fiber monocoque (first for a Porsche road car)
+ Body: Carbon-fiber reinforced polymer (CFRP) and magnesium
+ Brakes: Porsche Ceramic Composite Brakes (PCCB) – cutting-edge for its era</p>
+
+<p class="description"> Interior Features
+ Seats: Lightweight bucket seats (leather/carbon fiber)
+ Dashboard: Minimalist design with exposed metal gauges
+ Unique Feature: Heavy clutch pedal (due to high-revving V10)</p>
+
+<p class="description">Production & Rarity
+ Total Produced: 1,270 units (worldwide)
+ Original Price (2004): $440,000 USD
+ Current Value (Used): $1.5–2.5 million USD (collector’s item)</p>
+
+<p class="description">Key Facts About the Carrera GT
+ Engine Sound: Revered as one of the greatest automotive soundtracks thanks to its V10.
+ Racing Roots: Initially developed for Le Mans, canceled due to rule changes.
+ Driving Challenge: Requires expert skill due to RWD + high power + heavy clutch.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+   
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault();
+
+       
+        document.body.classList.add("fade-out");
+
+        
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>

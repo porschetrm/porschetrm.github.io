@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>911 Carrera - ARCHEON AUTO</title>
+  <link rel="stylesheet" href="CSS/CSSINTIRAFLI.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="ASSET/porsche-logo-6.png" width="55" height="50" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mobil.html">Cars</a></li>
+          <li><a href="ABOUTBEJIR.html">About</a></li>
+          <li><a href="KONTAKWELL.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="car-detail">
+    <h2>911 CARRERA</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="ASSET/c1.jpg" width="600" height="300"   class="slide" alt="Slide 1">
+        <img src="ASSET/c2.jpg" width="600" height="300" class="slide" alt="Slide 2">
+        <img src="ASSET/c3.jpg" width="600" height="300" class="slide" alt="Slide 3">
+        <img src="ASSET/c4.jpg" width="600" height="300" class="slide" alt="Slide 3">
+      </div>
+    </div>
+    <h3>ABOUT PORSCHE 911 CARRERA</h3>
+    <p class="description">Porsche 911 Carrera: A Timeless Sports Car
+The Porsche 911 Carrera is an iconic masterpiece in the world of sports cars, renowned for its exceptional blend of performance, design, and driving pleasure. For decades, the 911 has remained a benchmark in automotive engineering, offering a seamless fusion of tradition and innovation.
+
+Design
+The 911 Carrera features a classic silhouette that has evolved gracefully over time, with its signature sloping roofline, wide rear arches, and a pronounced front fascia.
+
+Aerodynamic enhancements, including an active rear spoiler, ensure optimal performance and efficiency.
+
+Inside, the cabin exudes sophistication, with premium materials, advanced technology, and a driver-focused layout that emphasizes comfort and control.</p>
+  <h3> ABOUT ENGINE PORSCHE 911 CARRERA</h3>
+  <p class="description">
+
+<p class="description"> Carrera Base: 3.0-liter twin-turbocharged flat-6.
+
+   Power: 379 hp.
+   Torque: 450 Nm (332 lb-ft).</p>
+<p class="description"> Carrera S: 3.0-liter twin-turbocharged flat-6.
+
+    Power: 443 hp.
+   Torque: 530 Nm (391 lb-ft).</p>
+<p class="description"> Carrera GTS: 3.0-liter twin-turbocharged flat-6.
+
+   Power: 473 hp.
+  Torque: 570 Nm (420 lb-ft).</p>
+
+<h3>PERFORMANCE</h3>
+
+<p class="description"> 0-100 km/h (0-62 mph): 4.2 to 3.3 seconds (depending on trim and drivetrain).
+ Top Speed: Ranges from 293 km/h (182 mph) for the base model to 311 km/h (193 mph) for the GTS.</p>
+<h3>UNIQUE FITURE</h3>:
+
+<p class="description"> Rear-engine layout for balanced handling.
+ Advanced aerodynamics with active rear spoilers.
+ Iconic design with modern technology and timeless appeal
+</p>
+</main>
+
+  <footer>
+    <p>&copy; 2025 PORSCHE</p>
+  </footer>
+
+  <script>
+  
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+
+      
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        e.preventDefault(); 
+
+        
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300); 
+      }
+    });
+  });
+  </script>
+</body>
+</html>
